@@ -61,17 +61,26 @@ public class JogadorRepository
 
     public async Task<IList<Jogador>> Get ()
     {
+        int line = -1;
         IList<Jogador> jogadores = new List<Jogador>();
         using (StreamReader reader = new StreamReader(Path)) 
         {
             string[] jogador;
-            while ((jogador = (await reader.ReadLineAsync()).Split(';')) != null)
+            while (!reader.EndOfStream && (jogador = (await reader.ReadLineAsync()).Split(';')) != null)
             {
+                line++;
+                if (line == 0)
+                    continue;
                 jogadores.Add(new Jogador(jogador[0]) { Vitorias = int.Parse(jogador[1])});
             }
         }
         return jogadores;
     }
+
+    public async Task<IList<Jogador>> GetTopSorted(int count)
+        => (await Get()).OrderByDescending(x => x.Vitorias)
+            .ThenBy(x => x.Nome)
+            .Take(count).ToList();
 
     public async Task Add (Jogador jogador) 
     {
@@ -85,9 +94,10 @@ public class JogadorRepository
                 int vitoriasAnteriores = int.Parse(jogadores[index].Substring(vitoriasIndex, 
                     jogadores[index].Length - vitoriasIndex));
                 
-                jogadores[index] = jogadores[index].Replace(vitoriasAnteriores.ToString(), (vitoriasAnteriores+1).ToString());
+                jogadores[index] = jogadores[index].Replace(vitoriasAnteriores.ToString(), 
+                    (vitoriasAnteriores+1).ToString());
             } else {
-                jogadores.Add($"{jogador.Nome};{jogador.Vitorias}");
+                jogadores.Add($"{jogador.Nome};{jogador.Vitorias+1}");
             }
 
             await File.WriteAllTextAsync(Path, string.Join('\r', jogadores));

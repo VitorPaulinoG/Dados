@@ -19,11 +19,23 @@ public class JogoView
 
     public async Task Start () 
     {
-        for (int i = 0; i < 11; i++) {
-            Console.WriteLine("Insira o nome do jogador: ");
-            string nome = Console.ReadLine();
-            int numero = 0;
+        _apostas.Clear();
+        for (int i = 0; i < 11; i++)
+        {
+            string nome;
+            bool nomeJaExiste;
+            do
+            {
+                Console.WriteLine("Insira o nome do jogador: ");
+                nome = Console.ReadLine();
 
+                nomeJaExiste = _apostas.Any(x => x.Jogador.Nome == nome);
+                if (nomeJaExiste)
+                    Console.WriteLine("Um mesmo jogador não pode apostar duas vezes no mesmo jogo.");
+               
+            } while (nomeJaExiste);
+            
+            int numero = 0;
             do
             {
                 try 
@@ -82,5 +94,7 @@ public class JogoView
         {
             Console.WriteLine("A máquina venceu!");
         }
+
+        
     }
 }

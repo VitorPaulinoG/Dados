@@ -12,4 +12,13 @@ public class Jogador
         Nome = nome;
         Vitorias = vitorias;
     }
+
+    public override string ToString()
+    {
+        return
+            $"""
+             {Nome},
+             {Vitorias} 
+             """;
+    }
 }
