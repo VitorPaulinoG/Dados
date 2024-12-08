@@ -3,7 +3,7 @@ using Dados.Events;
 namespace Dados.View;
 public class DadoView
 {
-    private Dictionary<int, string> _dados = new (){
+    private Dictionary<int, string> _dadosASCII = new (){
         {
             1, 
                 "╭─────────╮\n" +
@@ -60,7 +60,7 @@ public class DadoView
 
     public void MostrarDados (object sender, DadosLancadosEventArgs args) 
     {        
-        List<string> dados = args.Dados.Select(x => _dados[x.Value]).ToList();
+        List<string> dados = args.Dados.Select(x => _dadosASCII[x.Value]).ToList();
         List<string[]> partesDosDados = dados.Select(x => x.Split('\n')).ToList();
         
         string faces = "";

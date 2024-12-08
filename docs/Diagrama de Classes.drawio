@@ -1,0 +1,152 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0" version="24.8.4">
+  <diagram name="Página-1" id="CQHZI0JVnezxl6VELoev">
+    <mxGraphModel dx="1070" dy="2553" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="47PUknqlO2iExGUVd9wg-16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;curved=0;" edge="1" parent="1" source="47PUknqlO2iExGUVd9wg-1" target="47PUknqlO2iExGUVd9wg-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-17" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="47PUknqlO2iExGUVd9wg-16">
+          <mxGeometry x="-0.9088" y="1" relative="1" as="geometry">
+            <mxPoint x="9" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-18" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="47PUknqlO2iExGUVd9wg-16">
+          <mxGeometry x="0.8079" y="2" relative="1" as="geometry">
+            <mxPoint x="8" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-1" value="Jogador" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="240" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-2" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- nome: string&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-1">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-5" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- vitorias: int&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-1">
+          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-1">
+          <mxGeometry y="78" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-6" value="Aposta" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="240" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-7" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- jogador: Jogador&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-6">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-8" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- numero: int&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-6">
+          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-6">
+          <mxGeometry y="78" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-10" value="Dado" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="1">
+          <mxGeometry x="390" y="70" width="300" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-11" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- rand: Random&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-10">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-12" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- value: int&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-10">
+          <mxGeometry y="52" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-10">
+          <mxGeometry y="78" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-14" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ LancarDado(): void&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-10">
+          <mxGeometry y="86" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-15" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ &lt;u&gt;LancarDados&lt;/u&gt;(quantidade:int): int&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-10">
+          <mxGeometry y="112" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-26" value="Models" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" vertex="1" parent="1">
+          <mxGeometry x="58" y="24" width="754" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-33" value="View" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" vertex="1" parent="1">
+          <mxGeometry x="58" y="505" width="754" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-19" value="DadoView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="47PUknqlO2iExGUVd9wg-33">
+          <mxGeometry x="19" y="57" width="300" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-21" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- dadosASCII: Dictionary&amp;lt;int, string&amp;gt;&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-19">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-19">
+          <mxGeometry y="52" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-23" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ MostrarDados(...): void&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-19">
+          <mxGeometry y="60" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-34" value="ApostaView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="47PUknqlO2iExGUVd9wg-33">
+          <mxGeometry x="19" y="249" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-34">
+          <mxGeometry y="26" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-38" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ MostrarApostas(): void&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-34">
+          <mxGeometry y="34" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-41" value="JogoView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="47PUknqlO2iExGUVd9wg-33">
+          <mxGeometry x="352" y="57" width="300" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-42" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- rand: Random&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-41">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-43" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- value: int&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-41">
+          <mxGeometry y="52" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-44" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-41">
+          <mxGeometry y="78" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-45" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ LancarDado(): void&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-41">
+          <mxGeometry y="86" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-46" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ &lt;u&gt;LancarDados&lt;/u&gt;(quantidade:int): int&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-41">
+          <mxGeometry y="112" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-47" value="&lt;div&gt;RankingView&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="47PUknqlO2iExGUVd9wg-33">
+          <mxGeometry x="345" y="235" width="395" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-48" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- apostas: List&amp;lt;Aposta&amp;gt;&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-47">
+          <mxGeometry y="26" width="395" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-53" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- jogadorRepository: JogadorRepository&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-47">
+          <mxGeometry y="52" width="395" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-47">
+          <mxGeometry y="78" width="395" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-51" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ Start(): void&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-47">
+          <mxGeometry y="86" width="395" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-40" value="&amp;nbsp;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451" y="577" width="31" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-54" value="&lt;div&gt;Repositories&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" vertex="1" parent="1">
+          <mxGeometry x="58" y="993" width="754" height="279" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-55" value="JogadorRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Cascadia Code;" vertex="1" parent="47PUknqlO2iExGUVd9wg-54">
+          <mxGeometry x="19" y="57" width="300" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-56" value="&lt;font face=&quot;Cascadia Code&quot;&gt;- path: string&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-55">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-57" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="47PUknqlO2iExGUVd9wg-55">
+          <mxGeometry y="52" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-58" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ GetByName(nome: string): Jogador?&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-55">
+          <mxGeometry y="60" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-73" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ GetIndexByName(nome: string): Jogador?&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-55">
+          <mxGeometry y="86" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-74" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ Get(): IList&amp;lt;Jogador&amp;gt;&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-55">
+          <mxGeometry y="112" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="47PUknqlO2iExGUVd9wg-75" value="&lt;font face=&quot;Cascadia Code&quot;&gt;+ Add(jogador: Jogador): void&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="47PUknqlO2iExGUVd9wg-55">
+          <mxGeometry y="138" width="300" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

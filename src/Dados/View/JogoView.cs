@@ -6,11 +6,11 @@ public class JogoView
 {
     public event EventHandler<ApostaRealizadaEventArgs> ApostaRealizada;
     private List<Aposta> _apostas = new List<Aposta>();
-    private JogadorRepository _jogadorRep;
+    private JogadorRepository _jogadorRepository;
 
     public JogoView(JogadorRepository jogadorRepository)
     {
-        _jogadorRep = jogadorRepository;
+        _jogadorRepository = jogadorRepository;
     }
     public void OnApostaRealizada ()
     {
@@ -88,7 +88,7 @@ public class JogoView
         if(vencedor != null) 
         {
             Console.WriteLine($"O jogador {vencedor.Nome} venceu!");
-            await _jogadorRep.Add(vencedor);
+            await _jogadorRepository.Add(vencedor);
 
         } else 
         {
