@@ -75,21 +75,26 @@ public class JogadorRepository
 
     public async Task Add (Jogador jogador) 
     {
-        int index = await GetIndexByName(jogador.Nome);
-        List<string> jogadores = (await File.ReadAllTextAsync(Path)).Split('\r').ToList();
-        // Console.WriteLine("CHEGOU"); 
-        if(index >= 0) {
-            int vitoriasIndex = jogadores[index].IndexOf(';') + 1;
+        try {
+            int index = await GetIndexByName(jogador.Nome);
+            List<string> jogadores = (await File.ReadAllTextAsync(Path)).Split('\r').ToList();
+            // Console.WriteLine("CHEGOU"); 
+            if(index >= 0) {
+                int vitoriasIndex = jogadores[index].IndexOf(';') + 1;
 
-            int vitoriasAnteriores = int.Parse(jogadores[index].Substring(vitoriasIndex, 
-                jogadores[index].Length - vitoriasIndex));
-            
-            jogadores[index] = jogadores[index].Replace(vitoriasAnteriores.ToString(), (vitoriasAnteriores+1).ToString());
-        } else {
-            jogadores.Add($"{jogador.Nome};{jogador.Vitorias}");
+                int vitoriasAnteriores = int.Parse(jogadores[index].Substring(vitoriasIndex, 
+                    jogadores[index].Length - vitoriasIndex));
+                
+                jogadores[index] = jogadores[index].Replace(vitoriasAnteriores.ToString(), (vitoriasAnteriores+1).ToString());
+            } else {
+                jogadores.Add($"{jogador.Nome};{jogador.Vitorias}");
+            }
+
+            await File.WriteAllTextAsync(Path, string.Join('\r', jogadores));
+
+        } catch (Exception ex) {
+            Console.WriteLine(ex);
         }
-
-        await File.WriteAllTextAsync(Path, string.Join('\r', jogadores));
 
     }
 }
