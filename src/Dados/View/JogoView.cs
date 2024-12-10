@@ -40,7 +40,7 @@ public class JogoView
             {
                 try 
                 {
-                    Console.WriteLine("Insira o número no qual você deseja apostar: ");
+                    Console.WriteLine("Insira o número no qual você deseja apostar [1, 12]: ");
                     numero = int.Parse(Console.ReadLine());
                     if(numero < 1 || numero > 12)
                         Console.WriteLine("A aposta deve ser entre os números 1 e 12!");
